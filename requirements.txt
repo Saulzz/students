@@ -29,12 +29,10 @@ flatbuffers==24.3.25
 fonttools==4.54.1
 fsspec==2024.10.0
 gast==0.6.0
-google-api-core==2.23.0
 google-api-python-client==2.154.0
 google-auth==2.36.0
 google-auth-httplib2==0.2.0
 google-cloud-core==2.4.1
-google-cloud-firestore==2.19.0
 google-cloud-storage==2.18.2
 google-crc32c==1.6.0
 google-pasta==0.2.0
@@ -75,7 +73,6 @@ packaging==24.1
 pandas==2.2.3
 pillow==11.0.0
 proto-plus==1.25.0
-protobuf==3.19.5
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
 pycparser==2.22
