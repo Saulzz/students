@@ -1,4 +1,4 @@
-﻿absl-py==2.1.0
+absl-py==2.1.0
 asgiref==3.8.1
 astunparse==1.6.3
 attrs==24.2.0
@@ -17,10 +17,7 @@ cryptography==43.0.3
 cvzone==1.6.1
 cycler==0.12.1
 Django==5.1.3
-dlib==19.24.6
 dnspython==2.7.0
-face-recognition==1.3.0
-face-recognition-models==0.3.0
 filelock==3.16.1
 firebase-admin==6.6.0
 Flask==3.1.0
@@ -29,10 +26,12 @@ flatbuffers==24.3.25
 fonttools==4.54.1
 fsspec==2024.10.0
 gast==0.6.0
+google-api-core==2.23.0
 google-api-python-client==2.154.0
 google-auth==2.36.0
 google-auth-httplib2==0.2.0
 google-cloud-core==2.4.1
+google-cloud-firestore==2.19.0
 google-cloud-storage==2.18.2
 google-crc32c==1.6.0
 google-pasta==0.2.0
@@ -65,7 +64,6 @@ mtcnn==1.0.0
 namex==0.0.8
 networkx==3.4.2
 numpy==1.26.4
-opencv-contrib-python==4.10.0.84
 opencv-python==4.10.0.84
 opt_einsum==3.4.0
 optree==0.13.0
@@ -73,6 +71,7 @@ packaging==24.1
 pandas==2.2.3
 pillow==11.0.0
 proto-plus==1.25.0
+protobuf==4.24.3
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
 pycparser==2.22
