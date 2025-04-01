@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Test Vocacional</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="..\static\style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-box login" >
+            <form action="/login" method="POST">
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="error-message">
+                        {% for message in messages %}
+                            <p>{{ message }}</p>
+                        {% endfor %}
+                    </div>  
+                {% endif %}
+                {% endwith %}
+
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" name="user" id="userLogin" placeholder="Usuario"
+                    required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Contraseña"
+                    required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#"> ¿Olvido su contraseña?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>o inicia sesion con redes sociales</p>
+            </form>
+        </div>
+
+        <div class="form-box register" >
+            <form action="/login" method="POST">
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="error-message">
+                        {% for message in messages %}
+                            <p>{{ message }}</p>
+                        {% endfor %}
+                    </div>  
+                {% endif %}
+                {% endwith %}
+                <h1>Registrate</h1>
+                <div class="input-box">
+                    <input type="text" name="user" id="userRegister" placeholder="Usuario" required>
+                    
+                    <i class='bx bxs-user'></i>
+                </div>
+
+                
+
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email"
+                    required>
+                    <i class='bx bxs-envelope' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Contraseña"
+                    required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <button type="submit" class="btn">Registrate</button>
+            </form>
+        </div>
+
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left"> 
+                <h1>Hola, Bienvenido A Tu Test Vocacional</h1>
+                <p>¿No tienes una cuenta?</p>
+                <button class="btn register-btn">Registrate</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Bienvenido</h1>
+                <p>¿Ya tienes tu cuenta?</p>
+                <button type="submit" class="btn login-btn">Inicia Sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="..\static\script.js"></script>
+</body>  
+
+
+</html>
